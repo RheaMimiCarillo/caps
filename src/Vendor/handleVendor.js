@@ -23,7 +23,7 @@ let handleVendorPickupRequest = storeName =>
 
 let handleVendorDelivered = payload =>
 {
-  events.emit(`Thank you, ${ payload.customer }`);
+  console.log(`Thank you, ${ payload.customer }`);
 }
 
 // listen for delivered events
