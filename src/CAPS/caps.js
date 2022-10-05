@@ -36,6 +36,6 @@ caps.on('connection', (socket) =>
 
   });
 });
-const eventPool = require('./src/GlobalEventPool');
+const eventPool = require('../GlobalEventPool');
 
 module.exports = caps;
