@@ -5,8 +5,8 @@ A real-time service that allows for vendors, such as flower shops or restaurants
 ## Documentation
 
 ![Lab 11 UML](./images/lab11UML.jpg "Lab 11 UML")
-
+![Lab 12 UML](./images/lab12UML.jpg "Lab 12 UML")
 
 ## Contributions
 
-Big thanks to Michael Treat for helping me comprehend the lab prompt and to and Jacob Knaack for helping be debug the test suite.
+Big thanks to Michael Treat for helping me comprehend the lab prompt and to and Jacob Knaack for helping be debug the test suite for lab 11.
