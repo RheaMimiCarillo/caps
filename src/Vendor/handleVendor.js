@@ -23,13 +23,14 @@ let handleVendorPickupRequest = storeName =>
 
 let handleVendorDelivered = payload =>
 {
-  console.log(`Thank you, ${ payload.customer }`);
+  console.log(`Thank you for delivering ${orderId}`);
+  // console.log(`Thank you, ${ payload.customer } for delivering ${orderId}`);
 }
 
 // listen for delivered events
 // when a package gets delivered, respond to the ether with "Thank you, <customer-name"
 // 5. "As a vendor, I want to be notified when my package has been delivered."
-events.on('delivered', (payload) => handleVendorDelivered(payload));
+// events.on('delivered', (payload) => handleVendorDelivered(payload));
 
 // I want to be notified of when my package has been delivered (subscriber)
 
