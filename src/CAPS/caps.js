@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // import socket.io into this app and all associated socket.io methods
 const io = require('socket.io');
@@ -22,19 +22,19 @@ const chance = new Chance();
 let logger = (payload, eventName) =>
 {
   let event = {
-    "event": eventName,
+    'event': eventName,
     // chance.js random date object generator
-    "time": chance.date(),
-    "payload": payload,
-  }
-  console.log("EVENT", event);
+    'time': chance.date(),
+    'payload': payload,
+  };
+  console.log('EVENT', event);
   // events.emit("EVENT", event);
 };
 
 // listen for 'connection' events
 // pass in the 'socket' object (that has a lot of data) from the client
 // the socket comes from the client, to the server, upon connection
-caps.on('connection', (socket) =>
+CAPS.on('connection', (socket) =>
 {
   console.log('new client connected!');
 

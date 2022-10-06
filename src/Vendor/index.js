@@ -38,4 +38,4 @@ socket.on('delivered', (payload) =>
 
   // 5. last step, so we already made a payload on step 1
   handleVendorDelivered(payload);
-})
+});
