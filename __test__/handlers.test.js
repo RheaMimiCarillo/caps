@@ -19,9 +19,9 @@ const chance = new Chance();
 describe('testing event handlers', () => {
 
   test('Should ', () => {
-    jest.spyOn(console, "log");
-    jest.spyOn(events, "emit");
-    jest.spyOn(events, "on");
+    jest.spyOn(console, 'log');
+    jest.spyOn(events, 'emit');
+    jest.spyOn(events, 'on');
 
     handleVendor.handleVendorPickupRequest('wal-mart');
   });

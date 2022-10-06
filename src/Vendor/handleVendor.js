@@ -12,20 +12,20 @@ let handleVendorPickupRequest = storeName =>
 {
   // build out payload with chance.js
   let payload = {
-    "store": storeName,
-    "orderId": chance.guid(),
-    "customer": chance.name(),
-    "address": chance.address(),
+    'store': storeName,
+    'orderId': chance.guid(),
+    'customer': chance.name(),
+    'address': chance.address(),
   };
   events.emit('pickup', payload);
-}
+};
 
 
 let handleVendorDelivered = payload =>
 {
-  console.log(`Thank you for delivering ${orderId}`);
+  console.log(`Thank you for delivering ${payload.orderId}`);
   // console.log(`Thank you, ${ payload.customer } for delivering ${orderId}`);
-}
+};
 
 // listen for delivered events
 // when a package gets delivered, respond to the ether with "Thank you, <customer-name"
@@ -36,5 +36,5 @@ let handleVendorDelivered = payload =>
 
 module.exports = {
   handleVendorPickupRequest,
-  handleVendorDelivered
-}
+  handleVendorDelivered,
+};
