@@ -13,7 +13,7 @@ let handleDriverInTransit = payload =>
   console.log(`DRIVER: picked up ${ payload.orderId }`);
 
   events.emit(`in-transit`, payload);
-}
+};
 
 // I was to alert the `system` of when I have `delivered` a package (publisher)
 // 4. "As a driver, I want to alert the system when a package has been delivered."
@@ -24,7 +24,7 @@ let handleDriverDelivered = payload =>
   console.log(`DRIVER: delivered ${ payload.orderId }`);
 
   events.emit(`delivered`, payload);
-}
+};
 
 // listen for when a 'pickup' is send to the 'system'
 // 2. "As a driver, I want to be notified when there is a package to be delivered."
@@ -34,5 +34,5 @@ events.on('in-transit', (payload) => handleDriverDelivered(payload));
 
 module.exports = {
   handleDriverInTransit,
-  handleDriverDelivered
-}
+  handleDriverDelivered,
+};
