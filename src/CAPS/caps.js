@@ -76,6 +76,7 @@ caps.on('connection', (socket) =>
     socket.to(payload.vendorId).emit(event, payload);
 
     // call logger here, to generate the formatted message
+    socket.to(payload.vendorId).console.log(logger(payload, event));
   });
 });
 
