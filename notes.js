@@ -20,3 +20,5 @@ bananaNamespace.on('connection', (socket) =>
 });
 // then run `socket.join("some room name");
 //
+
+/* message queue */

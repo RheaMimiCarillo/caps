@@ -1,3 +1,4 @@
+/*
 // 'use strict';
 
 // import Events object instance from the dedicated eventEmitter file
@@ -11,7 +12,7 @@ let logger = (payload, eventName) =>
 {
   let event = {
     "event": eventName,
-    // chance.js random date object generator 
+    // chance.js random date object generator
     "time": chance.date(),
     "payload": payload,
   }
@@ -24,3 +25,5 @@ let logger = (payload, eventName) =>
 events.on('pickup', (payload) => logger(payload, 'pickup'));
 events.on('in-transit', (payload) => logger(payload, 'in-transit'));
 events.on('delivered', (payload) => logger(payload, 'delivered'));
+
+*/
