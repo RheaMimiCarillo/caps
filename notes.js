@@ -22,3 +22,13 @@ bananaNamespace.on('connection', (socket) =>
 //
 
 /* message queue */
+// message queue has two boxes: 1. outgoing queue, 2. received queue
+// the outgoing queue is messages that have yet to be sent out
+
+// the message queue in the socket server makes copies of the payload (messages) and holds them until the client gets them
+// client 
+
+// queue functionalities:
+// 1. add a message into the queue
+// 2. read all messages in the queue
+// 3. remove a message from the queue (after confirming that the recipient has read the messaGE)
